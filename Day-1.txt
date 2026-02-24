@@ -1,0 +1,94 @@
+
+
+
+GAI -> AI, ML, DL, NN, LLM, GAI
+Agents -> Tools, KB, LLM 
+Agentic AI -> Orcastrate the Agents -> Foundry -> langchain -> AWS Bedrock -> OpenAI
+
+1. Limitations -> Mitigated  
+
+Order -> Data -> Feature to describe your order -> manually label 
+    1. pickup 
+    2. delivery 
+    3. total 
+    4. tip 
+
+ML -> 
+    supervised
+
+    unsupervise -> data -> no manual activity for labeling-> algorithm -> u segregate the data as per your understading -> look for color, look for size 
+
+    semi suprevised -> algorithm -> manually -> unsupervise 
+        1. manually labeled
+        2. look for color, look for size
+
+    self supervised -> no human intervention 
+        1. labeling is done by algorithm -> 
+        2. unsupervised learning look for color, look for size 
+
+    RL 
+
+    RLHF
+
+
+
+
+    1. discriminative activities -> desison mainking -> supervised data set -> yes or no -> label the data image are labeled and then use it in ur usecase 
+    2. generative activities -> create a image or vijay with a background of raining weather 
+
+
+Speech recognition: 
+    1. frequency -> sign wave -> sampling theorm -> samples [phoneoms] -> network [state diagram] -> word 
+        A -> male, female, accent 
+
+
+CLI -> 
+    shell -> predefined commands -> rm  -> actions 
+
+NLP -> 
+    model -> commands [delete a file, remove a file, put the file in a bin] -> rm -> actions 
+
+
+Scale -> 
+    as the system requires for processing a task allocate the resources.
+
+    application deployment -> Bench Marking of application -> on this infra this is the behaviour 
+
+    1. web service -> 16gb ram, 1 tb sdd, 1000mbs network, 16 core cpu -> 1000 concurent request 
+
+    1. VS ->  16gb ram, 1 tb sdd, 1000mbs network, 16 core cpu -> 200
+    2. HS -> lb -> k8s -> containers -> predefined config -> os, resources -> application
+        16gb ram, 1 tb sdd, 1000mbs network, 16 core cpu
+        16gb ram, 1 tb sdd, 1000mbs network, 16 core cpu
+        16gb ram, 1 tb sdd, 1000mbs network, 16 core cpu
+        16gb ram, 1 tb sdd, 1000mbs network, 16 core cpu
+        16gb ram, 1 tb sdd, 1000mbs network, 16 core cpu 
+
+
+    1. threads -> tasks 
+    2. functional pragraming -> lambda functions -> [never share a context between functions ] [parameters() -> renturn ]
+
+
+create a video or vijay with a background of raining weather
+upload a image  I/p
+    |
+-> embedings [vector array -> numbers]
+    |
+[trained -> text, image, video] Model [process the prompt and prepare the output] [vector array] 
+    |
+Softmax -> [ pptx] -> xml kind  
+    |
+video [mp4]
+
+                                    []
+Prompt -> application [chatgpt] ->  [size]     ->        LLM  [server] stateless 
+
+
+Clacification algo
+Algorithm -> program -> process -> single system
+                        Process -> Distributed network of systems -> 8 months + 1000 of gpu's 
+                                -> functional prgraming -> parallel process  -> processed data 
+                                -> db -> data will be stored in db -> pattern 
+                        Attention what is needed 
+
+

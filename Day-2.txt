@@ -1,0 +1,52 @@
+
+Questions: 
+    1. how the resoponses from the llms are fast with such a huge content 
+    2. when to do Model Training
+    3. when to use RAG Architecture
+
+Todays Topic:
+    1. GEN AI Architecture 
+    2. Transformers Attention All you need means what 
+    3. what is embeddings mean 
+    4. RAG architecture 
+    5. Python Setup in VM 
+    6. Azure Portal Services [Foundry +]
+
+Recap: 
+
+    1. AI, ML [s, us, semi s, self s, rl, rlhf, DL [ANN]], model [Data + Algorithm], 
+        Smal Language Model -> edge device -> [IOT -> CCTV]
+        Large Language Model -> C/S 
+            1. huge data -> CCNet -> Internet data 2007-2023
+            2. state less service -> 
+            3. 200k tokens, 1000k tokens > 1 token -> 4 bytes -> 32 bits
+
+                client -> 200k tokens -> server LLM -> cost $ 0.34 100000 token 
+                text 
+                image 
+                mp4 
+
+        apples quaterly report -> 500 pages -> 500k - 3
+        what is growth ratio 
+
+        Hugging face -> algorithm [train ]                          -> Data set [100 mb] -> glass braking sound [data set], dog barking [data set]
+                        DB -> pattern matching -> 1500 mb -> NN
+FM -> CM -> Data Scientists
+Inference: Application developer 
+    1. prompts 
+    2. RAG 
+    3. tools 
+
+
+Vector DB -> + data i.e. text refrence 
+    Numbers -> matrix [23,45,23,67,8,9]
+
+dataset - 3 months 
+
+gpt-3 500b parameter -> got trained ->  2023
+gpt-4 1000b parameters ->  2024
+
+
+
+1. LLM -> content generation -> prmpt -> calaries in apple -> 70 calaries
+2. text embedings model -> text to vector conversion -> calaries in apple -> [23,4,57,9,78,56] 
