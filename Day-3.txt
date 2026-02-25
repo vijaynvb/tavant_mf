@@ -1,3 +1,4 @@
+
 1. Azure AI Srvice 
     1. Cognitive services 
         1. Document Intelegence 
@@ -16,3 +17,28 @@ More AI Services:
 
 1. Create a Resource Group -> 
 2. Deploy any service under this resource group
+
+
+
+GAI Application: 
+    Client [Python, CSharp]   ->    server [service] rest end point and also using 
+                                            models
+                                                1. prebuilt-layout -> text with boundry of the text 
+                                                2. prebuilt-idDocument-> SSN no, AAdhar, DL, Heath, PAN 
+                                                    {
+                                                        firstname name
+                                                        lastname 
+                                                        age
+                                                        address
+                                                        document type 
+                                                    }
+                                                3. Custom Model training of the document service 
+
+Computer Vision -> labeling a image, caption for image 
+traslation service ->
+language understaning ->  
+
+Gai -> pdf password protected 
+
+client [python code PyPDF.openpdf(password) -> read the data] -> service
+
