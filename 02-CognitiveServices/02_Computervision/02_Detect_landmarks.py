@@ -1,22 +1,12 @@
 #pip install azure-cognitiveservices-vision-computervision
-# pip install Pillow
 
 # Computer vision detect landmarks
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient 
-from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
-from azure.cognitiveservices.vision.computervision.models import VisualFeatureTypes
-import dotenv
 from msrest.authentication import CognitiveServicesCredentials
-
-from array import array
 import os
-from PIL import Image 
-import sys
-import time
 from dotenv import load_dotenv
 
 load_dotenv()
-
 subscription_key = os.getenv("KEY")  # Replace with your key
 endpoint = os.getenv("ENDPOINT")  # Replace with your endpoint
 
@@ -24,10 +14,7 @@ computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredenti
 
 IMAGES = [ 
            "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/taj_new_contant_edited.jpg",
-           "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/BennelongPoint.jpg",
-           "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/GoldenGateBridge.webp",
-           "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/LondonTowerBridge.jpg",
-           "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/londonbridge2.jpg"
+           "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/GoldenGateBridge.webp"
            ]
 
 # Call API with content type (landmarks) and URL

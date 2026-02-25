@@ -1,14 +1,8 @@
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
-from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
-from azure.cognitiveservices.vision.computervision.models import VisualFeatureTypes
 from dotenv import load_dotenv
 from msrest.authentication import CognitiveServicesCredentials
 
-from array import array
 import os
-from PIL import Image
-import sys
-import time
 
 load_dotenv()
 
@@ -18,33 +12,12 @@ endpoint = os.getenv("ENDPOINT")  # Replace with your endpoint
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
 '''
-Detect Brands - remote image url
-This example detects common brands like logos and puts a bounding box around them.
-'''
-# print("Detect Brands - remote")
-# # Get a URL with a brand logo
-# remote_image_url = "https://blog.logomyway.com/wp-content/uploads/2020/07/top-brand-logos.jpg" 
-
-# # Select the visual feature(s) you want
-# remote_image_features = ["brands"]
-# # Call API with URL and features
-# detect_brands_results_remote = computervision_client.analyze_image(remote_image_url, remote_image_features)
-
-# if len(detect_brands_results_remote.brands) == 0:
-#     print("No brands detected.")
-# else:
-#     for brand in detect_brands_results_remote.brands:
-#         print("'{}' brand detected with confidence {:.1f}% at location {}, {}, {}, {}".format(
-#             brand.name, brand.confidence * 100, brand.rectangle.x, brand.rectangle.x + brand.rectangle.w,
-#             brand.rectangle.y, brand.rectangle.y + brand.rectangle.h))
-# print()
-'''
 Detect Brands - local folder
 This example detects common brands and puts a bounding box around them.
 '''
 print("===== Detect Brands - local =====")
 # Open image file
-local_image_path = "..\\..\\Docs\\s-l960.jpg"
+local_image_path = "./Docs/s-l960.jpg"
 local_image = open(local_image_path, "rb")
 # Select the visual feature(s) you want
 local_image_features = ["brands"]

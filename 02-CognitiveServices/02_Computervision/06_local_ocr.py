@@ -1,14 +1,8 @@
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
-from azure.cognitiveservices.vision.computervision.models import VisualFeatureTypes
 from msrest.authentication import CognitiveServicesCredentials
-
-from array import array
 import os
-from PIL import Image
-import sys
 import time
-import requests
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -24,7 +18,7 @@ endpoint = os.getenv("ENDPOINT")  # Replace with your endpoint
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
 # Location to your image
-local_image = open('..\\..\\Docs\\20240201_201437_1.jpg', "rb")
+local_image = open('./Docs/20240201_201437_1.jpg', "rb")
 
 # Call API
 read_response = computervision_client.read_in_stream(local_image, raw=True)
