@@ -1,6 +1,8 @@
 #pip install azure-cognitiveservices-vision-computervision 
 #pip install azure-ai-vision-imageanalysis
 
+# Docs
+# https://learn.microsoft.com/en-us/python/api/azure-ai-vision-imageanalysis/azure.ai.vision.imageanalysis.imageanalysisclient?view=azure-python
 
 import os
 from azure.ai.vision.imageanalysis import ImageAnalysisClient   #cl     
