@@ -1,0 +1,18 @@
+1. Azure AI Srvice 
+    1. Cognitive services 
+        1. Document Intelegence 
+        2. computer vsion
+        3. .....
+    2. Microsoft Foundry -> Azure AI Foundry -> Azure AI Studio
+
+
+Microsoft Foundry:
+    1. projects
+        1. Foundry 
+        2. AI hub -> Enterprise -> 
+More AI Services:
+    1. Document Intelegence -> OCR 
+
+
+1. Create a Resource Group -> 
+2. Deploy any service under this resource group
