@@ -1,6 +1,7 @@
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 from azure.cognitiveservices.vision.computervision.models import VisualFeatureTypes
+from dotenv import load_dotenv
 from msrest.authentication import CognitiveServicesCredentials
 
 from array import array
@@ -9,12 +10,14 @@ from PIL import Image     # pip install pillow
 import sys
 import time
 
-subscription_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # Replace with your key
-endpoint = "https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.cognitiveservices.azure.com/" # Replace with your endpoint
+load_dotenv()
+
+subscription_key = os.getenv("KEY")  # Replace with your key
+endpoint = os.getenv("ENDPOINT")  # Replace with your endpoint
 
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
-remote_image_url = "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/TajMahal.avif"
+remote_image_url = "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/taj_new_contant_edited.jpg"
 
 print("********Describe an image - remote*********")
 # Call ComputerVision API

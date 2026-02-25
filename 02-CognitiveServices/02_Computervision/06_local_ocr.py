@@ -9,19 +9,22 @@ from PIL import Image
 import sys
 import time
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 '''
 Authenticate
 Authenticates your credentials and creates a client.
 '''
-subscription_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # Replace with your key
-endpoint = "https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.cognitiveservices.azure.com/" # Replace with your endpoint
+subscription_key = os.getenv("KEY")  # Replace with your key
+endpoint = os.getenv("ENDPOINT")  # Replace with your endpoint
 
 
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
 # Location to your image
-local_image = open('.\\Docs\\20240201_201437_1.jpg', "rb")
+local_image = open('..\\..\\Docs\\20240201_201437_1.jpg', "rb")
 
 # Call API
 read_response = computervision_client.read_in_stream(local_image, raw=True)

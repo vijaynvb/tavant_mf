@@ -8,13 +8,16 @@ import os
 from PIL import Image
 import sys
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 '''
 Authenticate
 Authenticates your credentials and creates a client.
 '''
-subscription_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # Replace with your key
-endpoint = "https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.cognitiveservices.azure.com/" # Replace with your endpoint
+subscription_key = os.getenv("KEY")  # Replace with your key
+endpoint = os.getenv("ENDPOINT")  # Replace with your endpoint
 
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 '''

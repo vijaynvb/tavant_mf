@@ -1,25 +1,34 @@
+#pip install azure-cognitiveservices-vision-computervision
+# pip install Pillow
+
 # Computer vision detect landmarks
-from azure.cognitiveservices.vision.computervision import ComputerVisionClient #pip install azure-cognitiveservices-vision-computervision
+from azure.cognitiveservices.vision.computervision import ComputerVisionClient 
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 from azure.cognitiveservices.vision.computervision.models import VisualFeatureTypes
+import dotenv
 from msrest.authentication import CognitiveServicesCredentials
 
 from array import array
 import os
-from PIL import Image
+from PIL import Image 
 import sys
 import time
+from dotenv import load_dotenv
 
-subscription_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # Replace with your key
-endpoint = "https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.cognitiveservices.azure.com/" # Replace with your endpoint
+load_dotenv()
+
+subscription_key = os.getenv("KEY")  # Replace with your key
+endpoint = os.getenv("ENDPOINT")  # Replace with your endpoint
 
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
-IMAGES = [ "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/TajMahal.avif",
+IMAGES = [ 
+           "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/taj_new_contant_edited.jpg",
            "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/BennelongPoint.jpg",
            "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/GoldenGateBridge.webp",
            "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/LondonTowerBridge.jpg",
-           "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/LondonTowerBridge1.avif",]
+           "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/londonbridge2.jpg"
+           ]
 
 # Call API with content type (landmarks) and URL
 for image_url in IMAGES:

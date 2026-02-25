@@ -1,6 +1,7 @@
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 from azure.cognitiveservices.vision.computervision.models import VisualFeatureTypes
+from dotenv import load_dotenv
 from msrest.authentication import CognitiveServicesCredentials
 
 from array import array
@@ -9,8 +10,10 @@ from PIL import Image
 import sys
 import time
 
-subscription_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # Replace with your key
-endpoint = "https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.cognitiveservices.azure.com/" # Replace with your endpoint
+load_dotenv()
+
+subscription_key = os.getenv("KEY")  # Replace with your key
+endpoint = os.getenv("ENDPOINT")  # Replace with your endpoint
 
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
@@ -41,7 +44,7 @@ This example detects common brands and puts a bounding box around them.
 '''
 print("===== Detect Brands - local =====")
 # Open image file
-local_image_path = ".\\Docs\\s-l960.jpg"
+local_image_path = "..\\..\\Docs\\s-l960.jpg"
 local_image = open(local_image_path, "rb")
 # Select the visual feature(s) you want
 local_image_features = ["brands"]

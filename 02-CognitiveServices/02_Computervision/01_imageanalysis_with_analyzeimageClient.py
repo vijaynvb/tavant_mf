@@ -1,23 +1,20 @@
-# Image Analysis - Generate tag, description
-# https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/call-analyze-image-40?pivots=programming-language-python#select-visual-features
-
-##
-##
-# Make sure to install the latest version of the Azure AI Vision library:
-
 #pip install azure-cognitiveservices-vision-computervision 
+#pip install azure-ai-vision-imageanalysis
 
 
 import os
 from azure.ai.vision.imageanalysis import ImageAnalysisClient   #cl     
 from azure.ai.vision.imageanalysis.models import VisualFeatures
 from azure.core.credentials import AzureKeyCredential
+from dotenv import load_dotenv
 
 # Set the values of your computer vision endpoint and computer vision key
 # as environment variables:
 
-endpoint = "xxxxxxxxx.cognitiveservices.azure.com/"  # Replace with your endpoint
-key = "xxxxxxxxxyyyyyyyyyzzzzzzzz"  # Replace with your key
+load_dotenv()
+
+endpoint = os.getenv("ENDPOINT")  # Replace with your endpoint
+key = os.getenv("KEY")  # Replace with your key
 
 
 # Create an Image Analysis client
@@ -34,8 +31,8 @@ image_url = "https://raw.githubusercontent.com/vijaynvb/tavant_mf/main/Docs/samp
 visual_features =[
         VisualFeatures.TAGS,
         VisualFeatures.OBJECTS,
-        VisualFeatures.CAPTION,
-        VisualFeatures.DENSE_CAPTIONS,
+        # VisualFeatures.CAPTION,
+        # VisualFeatures.DENSE_CAPTIONS,
         VisualFeatures.READ,
         VisualFeatures.SMART_CROPS,
         VisualFeatures.PEOPLE,
