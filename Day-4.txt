@@ -1,0 +1,5 @@
+1. Cognitive services 
+    1. vision
+    2. text analysis
+    3. text to speech
+1. Agetic AI platform [Foundry]
