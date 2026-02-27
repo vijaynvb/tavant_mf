@@ -4,3 +4,7 @@ Agents ->
     Memory
     Conversiotns 
     RAG 
+
+Creation of agent:
+    1. UI
+    2. SDK
