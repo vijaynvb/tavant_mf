@@ -1,0 +1,6 @@
+Genai -> 
+Agents ->
+    llm tools planning 
+    Memory
+    Conversiotns 
+    RAG 

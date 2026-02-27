@@ -1,5 +1,73 @@
+Question:
+
+1. model tranings out come?
+
 1. Cognitive services 
     1. vision
     2. text analysis
     3. text to speech
 1. Agetic AI platform [Foundry]
+
+1. Project management -> foundry 
+    1. gpt4.1 -> pricing tag -> 10000k 0.034 cents 
+
+Gen AI -> 
+Trainnig phase: 
+   python code -> data how much i can pass [200k]  ->  model gpt 4.1 [tool calling /docs] -> llm stateless services 
+                    |- Vectordb -> distributed db -> sharading -> indexed -> db instance
+
+Execution phase: 
+    propmpt -> 
+
+Agents -> 
+    1. gpt4.1
+    2. SA 
+    3. Open AI search
+
+
+What is the weather in bangalore today 
+    configure model to do tool calling 
+
+Orcastrater Agent.
+
+Recruit a .net full stack developer and post it only in internal protal  
+    1. jd 
+       prompt -> Recruit a .net full stack developer ->  LLM 
+    2. post the jd internal or external portals 
+        1. internal job portal 
+        2. naukri 
+        [llm,tools]
+    3. accept the resumes 
+        email 
+        [tools, llms]
+    4. shortlist the candidate [ATC]
+    5. setup interview with candidate 
+    6. contduct the interview [human interview]
+        agent-> [short term memory]
+    7. give interview scores 
+    8. identity the candiate 
+    9. hr 
+    10. give him a offer letter  
+offerletter 
+
+    1. Long term memory 
+
+  client -> humman message, system instrution [role of the model is defined over here]  ->   LLM 
+
+
+  Hallucination-> 
+
+    1. llm -> google maps details, BFSI, HMS 
+
+        system instruction: you are BFSI
+        prompt-> where is the bank?
+            1. banking 
+            2. hospital 
+            3. geo lacation 
+
+Prompt engg ->  
+    1. system instruction = [you are a senoir software engg]
+    2. context = [you are working on BFSI project using .net and angular]
+    3. question = generate a model for user registration
+    4. output indicator = json, cs, js
+
