@@ -8,3 +8,21 @@ Agents ->
 Creation of agent:
     1. UI
     2. SDK
+
+
+power automate -> 
+    Flow ->
+        copliot studio -> orcastrator agent 
+            it-support-agent ->
+
+RAG -> Retrevial Augmented Generation 
+
+    PDF -> Huge contnet -> [200k input and output] -> text
+    preprocessing -> vdb -> get the chunks 
+        -> llm to process it 
+
+
+Have a sales data in execl -> llm [python code] ->  graph [more over here]
+    code interpreter -> 
+        workspace -> get the code and run it and create images 
+    Azure-MCP-Tool -> storage

@@ -1,0 +1,287 @@
+[
+  {
+    "id": 1,
+    "title": "Generative AI",
+    "description": "Course covering Generative AI concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.5,
+    "reviews": 349,
+    "lectures": 202,
+    "price_inr": 599,
+    "original_price_inr": 2639,
+    "category": "Azure AI",
+    "tags": [
+      "OpenAI",
+      "RAG",
+      "Semantic Kernel",
+      "Azure AI Search",
+      "Predictive AI"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "All Levels"
+  },
+  {
+    "id": 2,
+    "title": "Lean AI",
+    "description": "Course covering Lean AI concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 5.0,
+    "reviews": 7,
+    "lectures": 39,
+    "price_inr": 549,
+    "original_price_inr": 769,
+    "category": "Sustainability AI",
+    "tags": [
+      "ESG",
+      "Sustainability",
+      "CSRD",
+      "AI Automation"
+    ],
+    "is_ufb": false,
+    "language": "English",
+    "level": "All Levels"
+  },
+  {
+    "id": 3,
+    "title": "Prompt Engg",
+    "description": "Course covering Prompt Engineering concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 6.0,
+    "reviews": 3,
+    "lectures": 29,
+    "price_inr": 549,
+    "original_price_inr": 769,
+    "category": "Azure AI Agents",
+    "tags": [
+      "Container Apps",
+      "Prompt Flow",
+      "AI Deployment"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "Intermediate"
+  },
+  {
+    "id": 4,
+    "title": "Microsoft Office Copilot",
+    "description": "Course covering Microsoft Office Copilot concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.7,
+    "reviews": 52,
+    "lectures": 60,
+    "price_inr": 549,
+    "original_price_inr": 1769,
+    "category": "Azure AI Agents",
+    "tags": [
+      "Kubernetes",
+      "Prompt Flow",
+      "Azure Foundry"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "Intermediate"
+  },
+  {
+    "id": 5,
+    "title": "Azure Services",
+    "description": "Course covering Azure Services concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.8,
+    "reviews": 35,
+    "lectures": 49,
+    "price_inr": 609,
+    "original_price_inr": 2059,
+    "category": "Azure AI Foundry",
+    "tags": [
+      "API Management",
+      "Prompt Flow",
+      "Azure AI"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "All Levels"
+  },
+  {
+    "id": 6,
+    "title": "Agentic AI",
+    "description": "Course covering Agentic AI concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.8,
+    "reviews": 39,
+    "lectures": 114,
+    "price_inr": 569,
+    "original_price_inr": 769,
+    "category": "Azure AI",
+    "tags": [
+      "Semantic Kernel",
+      "RAG",
+      "Azure AI Foundry"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "Expert"
+  },
+  {
+    "id": 7,
+    "title": "Power Platform (PL-600, DP-700)",
+    "description": "Course covering Power Platform concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.5,
+    "reviews": 190,
+    "lectures": 180,
+    "price_inr": 569,
+    "original_price_inr": 790,
+    "category": "Microsoft Certification",
+    "tags": [
+      "Fabric",
+      "DP-700",
+      "Data Engineer"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "Intermediate"
+  },
+  {
+    "id": 8,
+    "title": "Langchain",
+    "description": "Course covering Langchain concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.6,
+    "reviews": 182,
+    "lectures": 182,
+    "price_inr": 589,
+    "original_price_inr": 809,
+    "category": "Microsoft 365",
+    "tags": [
+      "M365",
+      "Copilot Studio",
+      "Teams AI"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "All Levels"
+  },
+  {
+    "id": 9,
+    "title": "LangGraph Smith",
+    "description": "Course covering LangGraph Smith concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.7,
+    "reviews": 216,
+    "lectures": 60,
+    "price_inr": 569,
+    "original_price_inr": 919,
+    "category": "Fabric + AI",
+    "tags": [
+      "Fabric",
+      "Power BI",
+      "Azure OpenAI"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "All Levels"
+  },
+  {
+    "id": 10,
+    "title": "Azure AI Foundry",
+    "description": "Course covering Azure AI Foundry concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.5,
+    "reviews": 45,
+    "lectures": 138,
+    "price_inr": 569,
+    "original_price_inr": 2679,
+    "category": "Microsoft Security",
+    "tags": [
+      "SC-100",
+      "Security",
+      "Azure",
+      "M365"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "Intermediate"
+  },
+  {
+    "id": 11,
+    "title": "Azure AI Services",
+    "description": "Course covering Azure AI Services concepts and applications.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.6,
+    "reviews": 216,
+    "lectures": 60,
+    "price_inr": 569,
+    "original_price_inr": 919,
+    "category": "Azure Data",
+    "tags": [
+      "Databricks",
+      "Apache Spark",
+      "Machine Learning"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "All Levels"
+  },
+  {
+    "id": 12,
+    "title": "RAG with Azure OpenAI ",
+    "description": "Master RAG pipelines using Azure OpenAI, CosmosDB, AI Search, and Vector Embeddings.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.7,
+    "reviews": 181,
+    "lectures": 69,
+    "price_inr": 609,
+    "original_price_inr": 1019,
+    "category": "RAG Systems",
+    "tags": [
+      "RAG",
+      "CosmosDB",
+      "GraphRAG",
+      "AI Search"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "Intermediate"
+  },
+  {
+    "id": 13,
+    "title": "Microsoft Foundry (Prompt Flow, LLMOps, RAG)",
+    "description": "Dive into Microsoft Foundry's Prompt Flow, LLMOps, and RAG features to build production-grade AI apps.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.6,
+    "reviews": 347,
+    "lectures": 85,
+    "price_inr": 569,
+    "original_price_inr": 790,
+    "category": "Microsoft Foundry",
+    "tags": [
+      "Prompt Flow",
+      "LLMOps",
+      "RAG"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "All Levels"
+  },
+  {
+    "id": 14,
+    "title": "Microsoft Copilot World (Microsoft 365, MS Purview)",
+    "description": "Explore the world of Microsoft Copilot, M365, and MS Purview — mastering AI governance and productivity tools.",
+    "instructor": "Vijay Reddy",
+    "rating": 4.6,
+    "reviews": 190,
+    "lectures": 182,
+    "price_inr": 589,
+    "original_price_inr": 809,
+    "category": "Microsoft 365 Copilot",
+    "tags": [
+      "Copilot",
+      "MS Purview",
+      "M365"
+    ],
+    "is_ufb": true,
+    "language": "English",
+    "level": "Intermediate"
+  }
+]

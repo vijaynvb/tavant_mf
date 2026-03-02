@@ -1,0 +1,23 @@
+
+Day - 5 
+    1. Create Agents [UI, SDK]
+    2. Use Tools in agents
+    3. Tools -> all different types of tools 
+        1. web search
+        2. code interpreter
+Day - 6
+    3. Tools
+        1. openapi
+        2. browser automation
+        3. memory
+    4. MCP as Tool
+    5. AI Gateway
+    6. Purpose 
+    7. Create AI Gateway 
+    8. Configure AI Gateway to manage model usage 
+    9. Configure AI Gateway to Manage Tool
+    10. Custom MCP Tool 
+    11. Create Custom MCP Tool 
+    12. Push tool into ACR 
+    13. Deploy tool into ACA 
+    14. Consume Custom MCP Tool in agent 
