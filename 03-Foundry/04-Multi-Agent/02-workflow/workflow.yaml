@@ -1,0 +1,40 @@
+kind: workflow
+trigger:
+  kind: OnConversationStart
+  id: trigger_wf
+  actions:
+    - kind: InvokeAzureAgent
+      id: node-1772694048877
+      agent:
+        name: Topic-Buildder-Agent
+      conversationId: =System.ConversationId
+      input:
+        messages: =System.LastMessage.Text
+      output:
+        autoSend: true
+        messages: Local.LastMessage
+    - kind: InvokeAzureAgent
+      id: node-1772694351081
+      agent:
+        name: MS-Learn-Module-Picker-Agent
+      conversationId: =System.ConversationId
+      input:
+        messages: =System.LastMessage.Text
+      output:
+        autoSend: true
+        messages: Local.LastMessage
+    - kind: InvokeAzureAgent
+      id: node-1772695214148
+      agent:
+        name: Study-Plan-Generator-Agent
+      conversationId: =System.ConversationId
+      input:
+        messages: =System.LastMessage.Text
+      output:
+        autoSend: true
+        messages: Local.LastMessage
+    - kind: EndConversation
+      id: node-1772695384086
+id: ""
+name: MS-Learn-Learning-Path-Builder
+description: ""
