@@ -1,0 +1,27 @@
+Day-7
+    1. Why multi agent 
+    2. Collaboration Patterns
+    3. Multi-Agent Design Principles
+    4. Orchestration Models
+    5. Lab:
+        1. HandsOn PII Management
+        2. HandsOn Invoice Management 
+
+Day-8 
+    1. Workflow Introduction
+    2. Workflow Patterns
+       1. Sequential
+       2. Conditional
+       3. Parallel
+       4. Human-in-the-loop
+    3. Create Workflow and add agents to workflow 
+        1. Trigger agents
+        2. Pass context
+        3. Handle retries
+        4. Manage state   
+    4. Power Fx in Workflows
+        1. Conditions
+        2. Transformations
+        3. Routing
+        4. Expressions
+    5. Lab: Create an Agent driven workflow
