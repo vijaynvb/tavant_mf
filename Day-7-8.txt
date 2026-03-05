@@ -1,3 +1,25 @@
+Recap: 
+
+MCP Agent -> Protocol to provide addtional context [Realtime, Propritery data]
+    1. remote 
+    2. custom mcp -> ACR, ACA -> AI Gateway [AIPM] -> Agents
+
+AI Gateway: [APIM]
+    1. Endpoints -> Models, MCP, Tools
+
+model -> 
+    1. 200k -> 1000
+
+Agentic AI -> Goal -> Multi Task 
+    Agent -> [Task 1]
+        1. Tools [Web Search, Broswer Automation] 
+        2. MCP [remote, Custom]
+        3. Memory 
+    Agent -> [Task 2]
+
+
+
+
 Day-7
     1. Why multi agent 
     2. Collaboration Patterns
